@@ -1,5 +1,5 @@
 import NavBar from "../componentes/NavBar";
-import Cardfilme from "/src/app/componentes/Cardfilme.jsx";
+
 import Titulo from "/src/app/componentes/titulo.jsx";
 
 async function carregarDados(){

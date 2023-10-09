@@ -15,14 +15,12 @@ export default async function Home() {
 
   const filmes = await carregarDados()
 
-
-
  return (
   <>
   <NavBar/>
 
    <Titulo>Em Alta</Titulo>
-  <section className="flex flex-wrap gap-2">
+  <section className="flex flex-wrap gap-2 text-black">
     {filmes.map( filme => <Cardfilme filme= {filme} />)}
   </section>
 

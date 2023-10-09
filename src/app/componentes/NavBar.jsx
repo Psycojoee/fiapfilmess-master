@@ -13,11 +13,10 @@ export default function NavBar(){
       }
 
     return (
-        <nav className='bg-black-500 text-orange-400 p-2 flex gap-3 items-end'>
+        <nav className='bg-black-500 text-neutral-900 p-2 flex gap-3 items-end'>
         <Link href="/">
-            <h1 className='holtwood one sc font-bold'>NYA NIMES</h1>
+            <h1 className='holtwood one sc font-bold'>SANOFI</h1>
         </Link>
-        <Link href="/favoritos">Favoritos</Link>
         <button onClick={logout}>logout</button>
        </nav>
     )

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import loginimage from "@/images/capa_login.jpg"
+import loginimage from "@/images/sanofi.png"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
@@ -30,14 +30,14 @@ export default function Login (){
     return(
         <div className="flex h-screen">
 
-            <aside className="hidden md:flex">
-                <Image className ="h-full w-full object-cover"src={loginimage}></Image>
-            </aside>
 
-            <main className="container m-auto max-w-md p-6">
-                <h1 className="text-xl font-bold">Fiap Filmes</h1>
-                <form onSubmit={login} className="flex flex-col">
-                    <label htmlFor="email">E-mail</label>
+            <main className="m-auto max-w-md ">
+            <aside className="hidden md:flex">
+                <Image className ="h-full w-56 object-cover"src={loginimage}></Image>
+            </aside>
+                    
+                <form onSubmit={login} className="flex flex-col ">
+                    <label className="text-black" htmlFor="email">E-mail</label>
                     <input 
                     className=" bg-slate-600 p-1 rounded" 
                     type="email" 
@@ -46,7 +46,7 @@ export default function Login (){
                     onChange={e => setEmail(e.target.value)}
                      />
 
-                    <label htmlFor="senha">Senha</label>
+                    <label className="text-black" htmlFor="senha">Senha</label>
                     <input className=" bg-slate-600 p-1 rounded" 
                     type="password" 
                     id="senha"
@@ -54,7 +54,7 @@ export default function Login (){
                     onChange={e => setSenha(e.target.value)}                    
                     />
 
-                    <button className="bg-orange-600 p-2 rounded mt-2.5">entrar</button>
+                    <button className="bg-neutral-950 p-2 rounded mt-2.5">entrar</button>
 
                 </form>
             </main>

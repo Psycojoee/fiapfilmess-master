@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <link href="/src/app/box.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body class="bg-gray-200 h-screen">
+    <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg">
+        <div class="p-4">
+            <div class="mb-4">
+                <img src="https://via.placeholder.com/50" alt="Foto" class="w-12 h-12 mb-2 rounded-full">
+                <button class="w-full p-3 bg-blue-500 text-white rounded mb-3" onclick="redirectTo('src/app')">Avaliação de Fatores de Risco em Pacientes Cirúrgicos</button>
+                <button class="w-full p-3 bg-blue-500 text-white rounded mb-3" onclick="redirectTo('src/app/outraPagina/page.jsx')">Botão 2</button>
+            </div>
+            <button class="w-full p-4 text-centre text-white bg-red-500 rounded-lg" onclick="redirectTo('/sair')">Sair</button>
+        </div>
+    </div> 
+    <h1 class="titulo">Avaliação de Fatores de Risco em Pacientes Cirúrgicos</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let score = 0;
+            const scoreDisplay = document.getElementById('scoreDisplay');
+
+            document.querySelectorAll('.risk-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        score += 1;
+                    } else {
+                        score -= 1;
+                    }
+                    scoreDisplay.textContent = score;
+                });
+            });
+        });
+    </script>
+</head>
+<body class="relative">
+    <div class="flex flex-col items-center justify-center h-screen"> <!-- Centralizar verticalmente e horizontalmente -->
+
+        <div class="mb-3 text-2xl">
+            <input type="checkbox" class="risk-checkbox" id="risk1">
+            <label for="risk1">Texto 1</label>
+        </div>
+        <div class="mb-3 text-2xl">
+            <input type="checkbox" class="risk-checkbox" id="risk2">
+            <label for="risk2">Texto 2</label>
+        </div>
+    </div>
+
+   
+    <div class="fixed bottom-0 right-0 mb-4 mr-4"> <!-- Posiciona no canto inferior direito com margem -->
+        <h2 class="titulo">Score do Paciente:</h2>
+        <div class="pontuacao">
+            <span id="scoreDisplay" class="text-4xl">0</span>
+        </div>
+    </div>
+    
+</body>
+</html>
