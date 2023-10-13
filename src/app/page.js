@@ -77,37 +77,37 @@ export default function Home() {
       <div className="text-white flex flex-col justify-center items-center w-full">
         <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', fontSize: '30px', color:'#000'}}>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk1" style={{width: '30px', height: '30px', marginRight: '20px'}} /> Idade de 41 anos a 60 anos
+            <input type="checkbox" className="risk-checkbox" id="risk1" style={{width: '30px', height: '30px', marginRight: '30px'}} /> Idade de 41 anos a 60 anos
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk2" style={{ width: '20px', height: '20px', marginRight: '20px' }} /> Cicurgia de grande porte (menos de 1 mês)
+            <input type="checkbox" className="risk-checkbox" id="risk2" style={{ width: '30px', height: '30px', marginRight: '30px' }} /> Cicurgia de grande porte (menos de 1 mês)
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk3" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Obesidade (IMC maior que 25)
+            <input type="checkbox" className="risk-checkbox" id="risk3" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Obesidade (IMC maior que 25)
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Varizes de membros interíores
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Varizes de membros interíores
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> História de doença intestinal inflamatória
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> História de doença intestinal inflamatória
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Sepse (Menos de 1 mês)
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Sepse (Menos de 1 mês)
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Doença pulmonar grave (Menos de 1 mês) incluindo pneumonia
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Doença pulmonar grave (Menos de 1 mês) incluindo pneumonia
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Edema Recorrente de membros inferiores
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Edema Recorrente de membros inferiores
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Infatdo agudo do miocárdio
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Infatdo agudo do miocárdio
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Insuficiência cardíaca congestiva
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Insuficiência cardíaca congestiva
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '20px', height: '20px', marginRight: '20px' }}/> Doença pulmonar obstrutiva crônica
+            <input type="checkbox" className="risk-checkbox" id="risk4" style={{ width: '30px', height: '30px', marginRight: '30px' }}/> Doença pulmonar obstrutiva crônica
           </label>
         </div>
       </div>
