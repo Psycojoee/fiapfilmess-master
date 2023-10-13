@@ -1,3 +1,6 @@
+"use client"
+
+export default function Score(){
 document.addEventListener('DOMContentLoaded', function() {
     let score = 0;
     const scoreDisplay = document.getElementById('scoreDisplay');
@@ -13,3 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+}

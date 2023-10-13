@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 5px; /* Espaçamento entre a checkbox e o texto "Que" */
+}
+
+.text-white.flex {
+  max-width: 100%; /* Limita a largura do contêiner */
+  flex-wrap: wrap; /* Aplica quebra de linha conforme necessário */
+}

@@ -13,11 +13,11 @@ export default function NavBar(){
       }
 
     return (
-        <nav className='bg-black-500 text-neutral-900 p-2 flex gap-3 items-end'>
+        <nav className='bg-black-500 text-neutral-900 p-2 flex gap-10 items-end'>
         <Link href="/">
             <h1 className='holtwood one sc font-bold'>SANOFI</h1>
         </Link>
-        <button onClick={logout}>logout</button>
+        <button onClick={logout}>Sair</button>
        </nav>
     )
 }
