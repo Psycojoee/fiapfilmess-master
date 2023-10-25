@@ -4,23 +4,21 @@ import React, { useState, useEffect } from 'react';
 import loginimage from "@/images/sanofi.png";
 import './globals.css';
 
-
-// Função para redirecionar para outra página
-function redirectTo(route) {
+function redirectTo(route) { // Função para redirecionar para outra página
   window.location.href = route;
 }
 
-async function carregarDados() {
-  // Coloque aqui a lógica para carregar os dados
+async function carregarDados() {  // Coloque aqui a lógica para carregar os dados
+
 }
 
 export default function Home() {
   // Utilize o estado para armazenar a página atual
   const [currentPage, setCurrentPage] = useState(''); // Inicialize com uma página vazia
   const [score, setScore] = useState(0); // Adicione o estado para a pontuação
+  const [menuVisible, setMenuVisible] = useState(false); // Estado para controlar a visibilidade do menu hambúrguer
 
-  useEffect(() => {
-    // Quando o componente é montado, vincule o evento 'change' aos checkboxes
+  useEffect(() => { // Quando o componente é montado, vincule o evento 'change' aos checkboxes
     document.querySelectorAll('.risk-checkbox').forEach(checkbox => {
       checkbox.addEventListener('change', function() {
         if (this.checked) {
@@ -32,17 +30,19 @@ export default function Home() {
     });
   },);
 
-  // Função para lidar com o logout
-  const handleLogout = () => {
+  const handleLogout = () => { // Função para lidar com o logout
     redirectTo('/login');
   };
 
   return (
     <div className="bg-slate-300 h-screen w-screen flex">
-      <div className="fixed top-0 left-0 h-full w-64 max-h-screen bg-black shadow-lg">
+      <button className="hamburger md:hidden" onClick={() => setMenuVisible(!menuVisible)}>
+        ☰
+      </button>
+      <div className={`sidebar ${menuVisible ? 'visible' : ''} md:block fixed top-0 left-0 h-full max-h-screen bg-red shadow-lg`} style={{ width: '30%' }}>
         <div className="p-4">
           <div className="mb-4">
-            <aside className="hidden md:flex p-4">
+            <aside className="hidden md:flex w-5/5">
               <Image className="h-full w-full object-cover" src={loginimage} />
             </aside>
             <button className="w-full p-3 bg-slate-700 text-white rounded mb-3"
@@ -61,6 +61,9 @@ export default function Home() {
               onClick={() => setCurrentPage('@src/app/login/page.jsx')}>Cardiologia</button>
             <button className="w-full p-3 bg-slate-700 text-white rounded mb-3"
               onClick={() => setCurrentPage('@src/app/login/page.jsx')}>Recursos</button>
+            <button className="w-full p-4 text-center text-white bg-red-500 rounded-lg" onClick={handleLogout}>
+              Sair
+            </button>
   
             <div className="fixed bottom-0 right-0 mb-4 mr-4 text-4xl">
               <h2 className="titulo text-black">Pontuação</h2>
@@ -68,9 +71,6 @@ export default function Home() {
                 <span id="scoreDisplay" className="text-4xl text-black">{score}</span>
               </div>
             </div>
-            <button className="w-full p-4 text-center text-white bg-red-500 rounded-lg" onClick={handleLogout}>
-              Sair
-            </button>
           </div>
         </div>
       </div>
