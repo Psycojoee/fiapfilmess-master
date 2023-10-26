@@ -42,7 +42,7 @@ export default function Home() {
       <div className={`sidebar ${menuVisible ? 'visible' : ''} md:block fixed top-0 left-0 h-full max-h-screen bg-red shadow-lg`} style={{ width: '30%' }}>
         <div className="p-4">
           <div className="mb-4">
-            <aside className="hidden md:flex w-5/5">
+            <aside className="hidden md:flex w-5/5 p-8">
               <Image className="h-full w-full object-cover" src={loginimage} />
             </aside>
             <button className="w-full p-3 bg-slate-700 text-white rounded mb-3"
@@ -74,10 +74,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="text-white flex flex-col justify-center items-center w-full">
-        <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', fontSize: '30px', color:'#000'}}>
+      <div className="text-white flex flex-col w-full pl-8 pt-72">
+        <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', fontSize: '30px', color:'#000', alignItems: 'flex-start'}}>
+
           <label className="checkbox-label">
-            <input type="checkbox" className="risk-checkbox" id="risk1" style={{width: '30px', height: '30px', marginRight: '30px'}} /> Idade de 41 anos a 60 anos
+            <input type="checkbox" className="risk-checkbox " id="risk1" style={{width: '30px', height: '30px', marginRight: '30px'}} /> Idade de 41 anos a 60 anos
           </label>
           <label className="checkbox-label">
             <input type="checkbox" className="risk-checkbox" id="risk2" style={{ width: '30px', height: '30px', marginRight: '30px' }} /> Cicurgia de grande porte (menos de 1 mês)
